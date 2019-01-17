@@ -1,10 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<path d="M408.785,174.075C312.002,102.146,278.652,44.566,256.002,0.001l0,0C256,0.001,256,0,256,0v0.001
-	c-22.648,44.565-56,102.146-152.783,174.074c-165.018,122.643-9.688,293.834,126.879,199.612
-	c-8.898,58.465-39.265,101.086-70.104,119.44V512H256h96.008v-18.87c-30.841-18.354-61.205-60.977-70.105-119.442
-	C418.47,467.911,573.802,296.718,408.785,174.075z"/>
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="66" width="66" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <image xlink:href="data:image/jpeg;base64,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" id="svg_1" height="64" width="64" y="0" x="-0.5"/>
+ </g>
 </svg>
