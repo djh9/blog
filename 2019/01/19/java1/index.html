@@ -11,18 +11,18 @@
     
 
     
-    <meta name="description" content="在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。 捕获异常主要设计一下三种代码块：1">
+    <meta name="description" content="异常处理在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。 抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。 捕获异常主要设计一下三种">
 <meta name="keywords" content="Clare">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java1">
 <meta property="og:url" content="https://djh9.github.com/blog/2019/01/19/java1/index.html">
 <meta property="og:site_name" content="Clare&#39;s Blog">
-<meta property="og:description" content="在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。 捕获异常主要设计一下三种代码块：1">
+<meta property="og:description" content="异常处理在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。 抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。 捕获异常主要设计一下三种">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-19T13:57:08.221Z">
+<meta property="og:updated_time" content="2019-01-19T14:00:18.101Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java1">
-<meta name="twitter:description" content="在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。 捕获异常主要设计一下三种代码块：1">
+<meta name="twitter:description" content="异常处理在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。 抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。 捕获异常主要设计一下三种">
 
     
     <link rel="alternative" href="/atom.xml" title="Clare&#39;s Blog" type="application/atom+xml">
@@ -98,11 +98,12 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#在-JAVA-中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。"><span class="toc-number">1.</span> <span class="toc-text">在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#异常处理"><span class="toc-number">1.</span> <span class="toc-text">异常处理</span></a></li></ol>
 		
 		</div>
 		
-		<h3 id="在-JAVA-中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。"><a href="#在-JAVA-中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。" class="headerlink" title="在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。"></a>在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。</h3><p>抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。</p>
+		<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。</p>
+<p>抛出异常可以分为显示和隐式两种。显示抛出异常的主体是应用程序，它指的是在程序中使用 throw 关键字，手动将异常实例抛出。隐式抛出异常的主题是 Java 虚拟机，它指的是 Java 虚拟机在执行过程中，碰到无法继续执行的异常状态，自动抛出异常。例如数组越界异常。</p>
 <p>捕获异常主要设计一下三种代码块：<br>1：try 代码块，用来标记需要进行异常监控的代码。<br>2：catch 代码块，跟在 try 代码块之后，用来捕获在 try 代码块中触发的某种指定类型的异常。除了声明所捕获异常的类型之外，catch 代码块还定义了针对该异常类型的异常处理。在 Java 中，try 代码块后面可以跟着多个 catch 代码块，来捕获不同类型的异常。Java 虚拟机会自上而下匹配异常处理器，所以前面的 catch 代码块不能覆盖后面的，否则编译器报错。<br>3：finally 代码块，跟在 catch 代码块之后，用来声明一段必定运行的代码。它的设计是为了避免跳过某些关键的清理代码。比如关闭已经打开的系统资源。<br>在程序正常执行情况下， finally 代码块会在 try 代码块之后运行。</p>
   
 	</div>
@@ -136,9 +137,9 @@
  
 
 <div class="next">
-<a href="/blog/2019/01/17/hello-world/" title="">
+<a href="/blog/2019/01/17/hello-world/" title="标题">
  <strong>下一篇：</strong><br> 
- <span>(no title)
+ <span>标题
 </span>
 </a>
 </div>
@@ -155,7 +156,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#在-JAVA-中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。"><span class="toc-number">1.</span> <span class="toc-text">在 JAVA 中，异常处理的方式主要是抛出异常和捕获异常。这两大要素共同实现程序控制流的非正常转移。</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#异常处理"><span class="toc-number">1.</span> <span class="toc-text">异常处理</span></a></li></ol>
  
   </div>
 
@@ -173,6 +174,10 @@
 		
 		  
 			<li><a href="/blog/categories/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/blog/categories/test/" title="test">test<sup>1</sup></a></li>
 		  
 		
 		</ul>
